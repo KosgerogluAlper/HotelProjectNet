@@ -1,5 +1,5 @@
 ﻿using HotelManager.EntityLayer.Concrete;
-using HotelManager.WebUI.Dtos.RegisterDto;
+using HotelProjectNetWebUI.Dtos.RegisterDto;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
