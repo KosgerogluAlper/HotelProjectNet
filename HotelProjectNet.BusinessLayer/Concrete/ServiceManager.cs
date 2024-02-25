@@ -1,14 +1,10 @@
 ﻿using HotelProjectNet.BusinessLayer.Abstract;
 using HotelProjectNet.DataAccessLayer.Abstract;
 using HotelProjectNet.EntityLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace HotelProjectNet.BusinessLayer.Concrete
 {
+
+
     public class ServiceManager : IServiceService
     {
         private readonly IServicesDal _servicesDal;
