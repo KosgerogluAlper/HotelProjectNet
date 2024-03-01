@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Net.Http;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
     public class _OurRoomsPartial : ViewComponent
     {

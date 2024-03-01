@@ -1,10 +1,5 @@
 ﻿using HotelProjectNet.DataAccessLayer.Abstract;
 using HotelProjectNet.DataAccessLayer.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HotelProjectNet.DataAccessLayer.Repositories
 {
@@ -45,7 +40,5 @@ namespace HotelProjectNet.DataAccessLayer.Repositories
             _context.Update(t);
             _context.SaveChanges();
         }
-
-
     }
 }

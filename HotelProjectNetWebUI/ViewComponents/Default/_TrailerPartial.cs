@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
-    public class _SubscribePartial:ViewComponent
+    public class _TrailerPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {

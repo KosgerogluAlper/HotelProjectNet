@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
     public class _HeadPartial : ViewComponent
     {

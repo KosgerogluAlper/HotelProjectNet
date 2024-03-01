@@ -1,22 +1,20 @@
 ﻿using HotelProject.WebUI.Dtos.ServiceDto;
-using HotelProjectNetWebUI.Dtos.RoomDto;
+using HotelProjectNetWebUI.Dtos.TestimonialDto;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
-    public class _ServicePartial:ViewComponent
+    public class _TestimonialPartial : ViewComponent
     {
         private readonly IHttpClientFactory _httpClientFactory;
 
-        private string link = " http://localhost:5062/api/Service";
+        private string link = " http://localhost:5062/api/Testimonial";
 
-        public _ServicePartial(IHttpClientFactory httpClientFactory)
+        public _TestimonialPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
-
-
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var client = _httpClientFactory.CreateClient();
@@ -24,13 +22,12 @@ namespace HotelProjectNetWebUI.Default
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultServiceDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultTestimonialDto>>(jsonData);
                 return View(values);
             }
+
 
             return View();
         }
     }
-
-
 }

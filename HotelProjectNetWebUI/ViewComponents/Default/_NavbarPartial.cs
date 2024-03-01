@@ -1,11 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
-    public class _SpinnerPartial : ViewComponent
+    public class _NavbarPartial : ViewComponent
     {
-
         public IViewComponentResult Invoke() { return View(); }
-
     }
 }

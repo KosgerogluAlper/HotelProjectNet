@@ -1,21 +1,21 @@
 ﻿using HotelProject.WebUI.Dtos.ServiceDto;
-using HotelProjectNetWebUI.Dtos.AboutDto;
+using HotelProjectNetWebUI.Dtos.StaffDto;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
-    public class _AboutUsPartial : ViewComponent
+    public class _TeamPartial : ViewComponent
     {
+
         private readonly IHttpClientFactory _httpClientFactory;
 
-        private string link = " http://localhost:5062/api/About";
+        private string link = " http://localhost:5062/api/Staff";
 
-        public _AboutUsPartial(IHttpClientFactory httpClientFactory)
+        public _TeamPartial(IHttpClientFactory httpClientFactory)
         {
             _httpClientFactory = httpClientFactory;
         }
-
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
@@ -24,18 +24,14 @@ namespace HotelProjectNetWebUI.Default
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
-                var values = JsonConvert.DeserializeObject<List<ResultAboutDto>>(jsonData);
+                var values = JsonConvert.DeserializeObject<List<ResultStaffDto>>(jsonData);
                 return View(values);
             }
+
             return View();
         }
 
-
-
-
-
-
-
-
     }
+
+
 }

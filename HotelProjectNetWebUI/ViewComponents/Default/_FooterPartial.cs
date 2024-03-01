@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace HotelProjectNetWebUI.Default
+namespace HotelProjectNetWebUI.ViewComponents.Default
 {
-    public class _TestimonialPartial:ViewComponent
+    public class _FooterPartial : ViewComponent
     {
         public IViewComponentResult Invoke()
         {
