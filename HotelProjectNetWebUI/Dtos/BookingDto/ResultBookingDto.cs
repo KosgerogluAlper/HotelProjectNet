@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HotelProjectNet.EntityLayer.Concrete
+﻿namespace HotelProjectNetWebUI.Dtos.BookingDto
 {
-    public class Booking
+    public class ResultBookingDto
     {
         public int BookingID { get; set; }
         public string Name { get; set; }
@@ -18,6 +12,6 @@ namespace HotelProjectNet.EntityLayer.Concrete
         public int RoomType { get; set; }
         public string SpecialRequest { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public string Status { get; set; }
+        public bool Status { get; set; }
     }
 }

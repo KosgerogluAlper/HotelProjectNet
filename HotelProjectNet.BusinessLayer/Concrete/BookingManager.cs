@@ -15,7 +15,23 @@ namespace HotelProjectNet.BusinessLayer.Concrete
 
         public BookingManager(IBookingDal bookingDal)
         {
-            bookingDal = bookingDal;
+            _bookingDal = bookingDal;
+        }
+
+        public void TApprovedBookingStatusChangeApproved(Booking booking)
+        {
+            _bookingDal.BookingStatusChangeApproved(booking);
+        }
+
+        public void TBookingStatusChangeApproved(Booking booking)
+        {
+            _bookingDal.BookingStatusChangeApproved(booking);
+        }
+
+        public void TBookingStatusChangeApproved2(int id)
+        {
+            _bookingDal.BookingStatusChangeApproved(id);
+
         }
 
         public void TDelete(Booking t)
@@ -30,7 +46,6 @@ namespace HotelProjectNet.BusinessLayer.Concrete
 
         public List<Booking> TGetList()
         {
-
             return _bookingDal.GetList();
         }
 

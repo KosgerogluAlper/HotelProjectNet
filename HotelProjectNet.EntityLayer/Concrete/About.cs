@@ -23,6 +23,5 @@ namespace HotelProjectNet.EntityLayer.Concrete
 
         public int CustomerCount { get; set; }
 
-
     }
 }

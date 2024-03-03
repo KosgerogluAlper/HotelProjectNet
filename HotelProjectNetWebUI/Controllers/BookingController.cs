@@ -39,7 +39,11 @@ namespace HotelProjectNetWebUI.Controllers
             var jsonData = JsonConvert.SerializeObject(createBookingDto);
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");
             var responseMessage = await client.PostAsync(link, content);
-            return RedirectToAction("Index", "Default");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Default");
+            }
+            return View();
         }
     }
 }

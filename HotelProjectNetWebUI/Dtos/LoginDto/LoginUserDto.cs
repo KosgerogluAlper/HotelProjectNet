@@ -8,6 +8,5 @@ namespace HotelProjectNetWebUI.Dtos.LoginDto
         public string Username { get; set; }
         [Required(ErrorMessage = "Şifreyi Giriniz")]
         public string Password { get; set; }
-
     }
 }

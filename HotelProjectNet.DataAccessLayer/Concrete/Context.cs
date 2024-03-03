@@ -13,7 +13,6 @@ namespace HotelProjectNet.DataAccessLayer.Concrete
             optionsBuilder.UseSqlServer("server=Alper\\SQLEXPRESS;initial catalog=ApiDBData; integrated security = true;TrustServerCertificate=True");
         }
 
-
         public DbSet<Room> Rooms { get; set; }
 
         public DbSet<Service> Services { get; set; }
@@ -27,6 +26,6 @@ namespace HotelProjectNet.DataAccessLayer.Concrete
         public DbSet<About> Abouts { get; set; }
 
         public DbSet<Booking> Bookings { get; set; }
-    
+ 
     }
 }

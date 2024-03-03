@@ -177,10 +177,10 @@ namespace HotelProjectNet.DataAccessLayer.Migrations
                     b.Property<int>("AdultCount")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("Checkin")
+                    b.Property<DateTime>("CheckIn")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("Checkout")
+                    b.Property<DateTime>("CheckOut")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("ChildCount")
@@ -198,7 +198,7 @@ namespace HotelProjectNet.DataAccessLayer.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("RoomCount")
+                    b.Property<int>("RoomType")
                         .HasColumnType("int");
 
                     b.Property<string>("SpecialRequest")
