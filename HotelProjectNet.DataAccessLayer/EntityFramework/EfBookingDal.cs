@@ -15,7 +15,7 @@ namespace HotelProjectNet.DataAccessLayer.EntityFramework
         {
             var context = new Context();
             var values = context.Bookings.Where(x => x.BookingID == booking.BookingID).FirstOrDefault();
-            values.Status = "Onaylandı";
+         //   values.Status = "Onaylandı";
             context.SaveChanges();
         }
 
@@ -24,7 +24,7 @@ namespace HotelProjectNet.DataAccessLayer.EntityFramework
         {
             var context = new Context();
             var values = context.Bookings.Find(id);
-            values.Status = "Onaylandı";
+    //        values.Status = "Onaylandı";
             context.SaveChanges();
         }
     }

@@ -1,4 +1,5 @@
-﻿using HotelProjectNet.BusinessLayer.Abstract;
+﻿
+using HotelProjectNet.BusinessLayer.Abstract;
 using HotelProjectNet.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

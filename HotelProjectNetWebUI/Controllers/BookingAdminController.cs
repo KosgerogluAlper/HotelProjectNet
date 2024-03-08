@@ -32,7 +32,7 @@ namespace HotelProjectNetWebUI.Controllers
         // k'dan bak
         public async Task<IActionResult> ApprovedReservation(ApprovedReservationDto approvedReservationDto)
         {
-            approvedReservationDto.Status = "Onaylandı";
+          //  approvedReservationDto.Status = true;
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(approvedReservationDto);
             StringContent content = new StringContent(jsonData, Encoding.UTF8, "application/json");

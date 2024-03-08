@@ -18,6 +18,6 @@ namespace HotelProjectNet.EntityLayer.Concrete
         public int RoomType { get; set; }
         public string SpecialRequest { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
-        public string Status { get; set; }
+        public bool Status { get; set; }
     }
 }
